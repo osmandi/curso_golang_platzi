@@ -1,9 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func isPalindromo(text string) {
 	var textReverse string
+
+	// Convert text to lower
+	text = strings.ToLower(text)
 
 	for i := len(text) - 1; i >= 0; i-- {
 		textReverse += string(text[i])
