@@ -4,43 +4,23 @@ import "fmt"
 
 func main() {
 
-	// Area cuadrado
-	const baseCuadrado = 10
-	areaCuadrado := baseCuadrado * baseCuadrado
-	fmt.Println("Area cuadrado:", areaCuadrado)
+	// For condicinal
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
 
-	x := 10
-	y := 50
+	// For while
+	counter := 0
+	for counter < 10 {
+		fmt.Println(counter)
+		counter++
+	}
 
-	// Suma
-	result := x + y
-	fmt.Println("Suma:", result)
-
-	// Resta
-	result = y - x
-	fmt.Println("Resta:", result)
-
-	// Multiplicación
-	result = x * y
-	fmt.Println("Multiplicación:", result)
-
-	// División
-	result = y / x
-	fmt.Println("División:", result)
-
-	// Modulo
-	result = y % x
-	fmt.Println("Modulo:", result)
-
-	// Incremental
-	x++
-	fmt.Println("Incremental:", x)
-
-	// Decremental
-	x--
-	fmt.Println("Decremental:", x)
-
-	// Retos
-	// -Rectángulo, trapecio y de un círculo
+	// For forever
+	counterForever := 0
+	for {
+		fmt.Println(counterForever)
+		counterForever++
+	}
 
 }
